@@ -1,0 +1,23 @@
+# Build
+FROM adoptopenjdk/openjdk11:jdk-11.0.18_10-alpine AS builder
+
+WORKDIR /app
+
+COPY . /app
+
+ARG G2B_NEXUS_USERNAME
+ARG G2B_NEXUS_PASSWORD
+ARG G2B_NEXUS_HOST
+
+RUN G2B_NEXUS_USERNAME=$G2B_NEXUS_USERNAME G2B_NEXUS_PASSWORD=$G2B_NEXUS_PASSWORD G2B_NEXUS_HOST=$G2B_NEXUS_HOST ./gradlew clean bootJar --no-daemon
+
+# Run
+FROM adoptopenjdk/openjdk11:jre-11.0.18_10-alpine
+
+COPY --from=builder /app/build/libs/molb-agency-portal-backend-0.0.1-SNAPSHOT.jar /app/app.jar
+ADD entrypoint.sh /bin/entrypoint.sh
+WORKDIR /app
+EXPOSE 8088
+ARG IMAGE_TAG
+ENV IMAGE_TAG=$IMAGE_TAG
+CMD ["/bin/entrypoint.sh"]

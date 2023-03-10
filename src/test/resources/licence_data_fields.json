@@ -1,0 +1,414 @@
+{
+  "section": {
+    "nric": "S9912345A",
+    "appointments": {
+      "name": "Tim Tom",
+      "idType": "NRIC",
+      "address": {
+        "unit": "01",
+        "floor": "10",
+        "blockNo": "01",
+        "postalCode": "117438",
+        "streetName": "Pasir Panjang Road",
+        "buildingName": "Mapletree Business City"
+      },
+      "category": "Individual",
+      "idNumber": "S9876543A",
+      "position": "Director",
+      "nationality": "SINGAPORE CITIZEN"
+    },
+    "shareholders": {
+      "name": "Tim Tom",
+      "idType": "NRIC (CITIZEN)",
+      "address": {
+        "unit": "01",
+        "floor": "10",
+        "blockNo": "01",
+        "postalCode": "117438",
+        "streetName": "Pasir Panjang Road",
+        "buildingName": "Mapletree Business City"
+      },
+      "category": "Individual",
+      "currency": "SINGAPORE, DOLLARS",
+      "idNumber": "S9876543A",
+      "shareType": "Ordinary Capital",
+      "allocation": "10000",
+      "shareGroup": "001",
+      "nationality": "SINGAPORE CITIZEN",
+      "allotmentDate": "17/04/2018",
+      "guaranteedAmount": "10000"
+    },
+    "standardAddress": {
+      "unit": "11",
+      "floor": "11",
+      "blockNo": "10",
+      "postalCode": "138649",
+      "streetName": "CENTRAL EXCHANGE GREEN",
+      "buildingName": "PIXEL"
+    }
+  },
+  "complexAddable": [
+    {
+      "shareholders": {
+        "name": "Tim Tom",
+        "idType": "NRIC (CITIZEN)",
+        "address": {
+          "unit": "01",
+          "floor": "10",
+          "blockNo": "01",
+          "postalCode": "117438",
+          "streetName": "Pasir Panjang Road",
+          "buildingName": "Mapletree Business City"
+        },
+        "category": "Individual",
+        "currency": "SINGAPORE, DOLLARS",
+        "idNumber": "S9876543A",
+        "shareType": "Ordinary Capital",
+        "allocation": "10000",
+        "shareGroup": "001",
+        "nationality": "SINGAPORE CITIZEN",
+        "allotmentDate": "17/04/2018",
+        "guaranteedAmount": "10000"
+      },
+      "addableField2": "unrelatedField"
+    },
+    {
+      "shareholders": {
+        "name": "Henry Tan",
+        "idType": "NRIC (CITIZEN)",
+        "address": {
+          "unit": "10",
+          "floor": "07",
+          "blockNo": "1",
+          "postalCode": "138577",
+          "streetName": "Fusionopolis View",
+          "buildingName": "Sandcrawler Building"
+        },
+        "category": "Individual",
+        "currency": "SINGAPORE, DOLLARS",
+        "idNumber": "S3847576B",
+        "shareType": "Ordinary Capital",
+        "allocation": "10000",
+        "shareGroup": "001",
+        "nationality": "SINGAPORE CITIZEN",
+        "allotmentDate": "23/07/2012",
+        "guaranteedAmount": "9000"
+      },
+      "addableField2": "unrelatedField value"
+    },
+    {
+      "shareholders": {
+        "name": "Ken Lee",
+        "idType": "NRIC (CITIZEN)",
+        "address": {
+          "unit": "01",
+          "floor": "06",
+          "blockNo": "11",
+          "postalCode": "189675",
+          "streetName": "",
+          "buildingName": ""
+        },
+        "category": "Individual",
+        "currency": "SINGAPORE, DOLLARS",
+        "idNumber": "S6725327B",
+        "shareType": "Ordinary Capital",
+        "allocation": "8888",
+        "shareGroup": "001",
+        "nationality": "SINGAPORE CITIZEN",
+        "allotmentDate": "20/02/2002",
+        "guaranteedAmount": "800000"
+      },
+      "addableField2": "unrelatedField value"
+    }
+  ],
+  "additionalComponents": {
+    "id": {
+      "idType": "NRIC",
+      "idNumber": "S1111111D"
+    },
+    "dropdown": "Option 1",
+    "nationality": "SINGAPORE CITIZEN",
+    "countryRegion": "SINGAPORE"
+  },
+  "addableWithComponents": [
+    {
+      "id": {
+        "idType": "NRIC",
+        "idNumber": "S1111111D"
+      },
+      "date": "08/09/2022",
+      "email": "nice_email@email.com",
+      "rowId": "1",
+      "address": {
+        "unit": "",
+        "floor": "",
+        "blockNo": "",
+        "postalCode": "",
+        "streetName": "1 Nice Street",
+        "description": "Office",
+        "buildingName": "Nice Building",
+        "withoutPostalCode": true
+      },
+      "checkbox": [
+        "Option 1",
+        "Option 2"
+      ],
+      "dropdown": "Option 1",
+      "longText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+      "rowStatus": "Updated",
+      "shortText": "Short Text",
+      "attachment": "20220527141555019_addable_attachment_1.jpeg",
+      "nationality": "SINGAPORE CITIZEN",
+      "paymentMode": "Online Payment",
+      "radioButton": "Option 1",
+      "subaddable1": [
+        {
+          "dropdown": "Option 1",
+          "longText": "Some long text to demo that it will extend as long as possible in one line"
+        },
+        {
+          "dropdown": "Option 2",
+          "longText": ""
+        }
+      ],
+      "contactNumber": "+6588888888",
+      "countryRegion": "SINGAPORE"
+    },
+    {
+      "id": {
+        "idType": "FIN",
+        "idNumber": "F1111111N"
+      },
+      "date": "08/09/2022",
+      "email": "nicer_email@email.com",
+      "rowId": "2",
+      "address": {
+        "unit": "101",
+        "floor": "9",
+        "blockNo": "66",
+        "postalCode": "101323",
+        "streetName": "Nicer Street",
+        "description": "213",
+        "buildingName": "Nicer Building",
+        "withoutPostalCode": true
+      },
+      "checkbox": [
+        "Option 2"
+      ],
+      "dropdown": "Option 2",
+      "longText": "Shorter long text.",
+      "rowStatus": "Removed",
+      "shortText": "Short Text",
+      "attachment": "20220527141555019_addable_attachment_2.jpeg",
+      "nationality": "MALAYSIAN",
+      "paymentMode": "Offline Payment",
+      "radioButton": "Option 2",
+      "subaddable1": [
+        {
+          "dropdown": "Option 1",
+          "longText": "Some nice text"
+        }
+      ],
+      "contactNumber": "+6588888888",
+      "countryRegion": "MALAYSIA"
+    },
+    {
+      "id": {
+        "idType": "",
+        "idNumber": ""
+      },
+      "date": null,
+      "email": "",
+      "rowId": "3",
+      "address": {
+        "unit": "",
+        "floor": "",
+        "blockNo": "",
+        "postalCode": "",
+        "streetName": "",
+        "description": "",
+        "buildingName": "",
+        "withoutPostalCode": true
+      },
+      "checkbox": [],
+      "dropdown": "",
+      "longText": "",
+      "rowStatus": null,
+      "shortText": "",
+      "attachment": null,
+      "nationality": "",
+      "paymentMode": "",
+      "radioButton": "",
+      "subaddable1": [],
+      "contactNumber": "",
+      "countryRegion": ""
+    }
+  ],
+  "addableWithSubaddables": [
+    {
+      "rowId": "1",
+      "shortText": "Dummy Text",
+      "subaddable2": [
+        {
+          "longText": "Some nice text",
+          "dropdown1": "Option 1",
+          "dropdown2": "Option 2"
+        },
+        {
+          "longText": "",
+          "dropdown1": "Option 2",
+          "dropdown2": ""
+        }
+      ],
+      "subaddable3": [
+        {
+          "id": {
+            "idType": "FIN",
+            "idNumber": "F1111111N"
+          },
+          "dropdown1": "Option 1",
+          "dropdown2": "Option 1"
+        },
+        {
+          "id": {
+            "idType": "NRIC",
+            "idNumber": "S1111111N"
+          },
+          "dropdown1": "Option 2",
+          "dropdown2": "Option 1"
+        },
+        {
+          "id": {
+            "idType": "FIN",
+            "idNumber": "F1111111N"
+          },
+          "dropdown1": "Option 3",
+          "dropdown2": "Option 1"
+        }
+      ]
+    },
+    {
+      "rowId": "2",
+      "shortText": "",
+      "subaddable2": [],
+      "subaddable3": []
+    }
+  ],
+  "addableWithAppointments": [
+    {
+      "nric": "S9912345A",
+      "time": "08:02 AM",
+      "yesNo": "No",
+      "number": "2",
+      "rating": 5,
+      "decimal": 11.22,
+      "addressLine1": "Block 123",
+      "addressLine2": "EAST ROAD",
+      "addressLine3": "PIXEL",
+      "addressLine4": "168715",
+      "addressLine5": "SINGAPORE",
+      "appointments": {
+        "name": "Tim Tom",
+        "idType": "NRIC",
+        "address": {
+          "unit": "01",
+          "floor": "10",
+          "blockNo": "01",
+          "postalCode": "117438",
+          "streetName": "Pasir Panjang Road",
+          "buildingName": "Mapletree Business City"
+        },
+        "category": "Individual",
+        "idNumber": "S9876543A",
+        "position": "Director",
+        "nationality": "SINGAPORE CITIZEN"
+      },
+      "standardAddress": {
+        "unit": "11",
+        "floor": "11",
+        "blockNo": "123",
+        "postalCode": "168715",
+        "streetName": "EAST ROAD",
+        "buildingName": "PIXEL"
+      }
+    },
+    {
+      "nric": "S9912345A",
+      "time": "09:02 AM",
+      "yesNo": "No",
+      "number": "22",
+      "rating": 2,
+      "decimal": 22.22,
+      "addressLine1": "Block 09",
+      "addressLine2": "CENTRAL EXCHANGE BLUE",
+      "addressLine3": "PIXEL",
+      "addressLine4": "168655",
+      "addressLine5": "SINGAPORE",
+      "appointments": {
+        "name": "Henry Tan",
+        "idType": "NRIC",
+        "address": {
+          "unit": "10",
+          "floor": "07",
+          "blockNo": "1",
+          "postalCode": "138577",
+          "streetName": "Fusionopolis View",
+          "buildingName": "Sandcrawler Building"
+        },
+        "category": "Individual",
+        "idNumber": "S3847576B",
+        "position": "Director",
+        "nationality": "SINGAPORE CITIZEN",
+        "appointedDate": "01/05/2000"
+      },
+      "standardAddress": {
+        "unit": "11",
+        "floor": "11",
+        "blockNo": "09",
+        "postalCode": "168655",
+        "streetName": "CENTRAL EXCHANGE BLUE",
+        "buildingName": "PIXEL"
+      }
+    },
+    {
+      "nric": "S9912345A",
+      "time": "12:02 AM",
+      "yesNo": "Yes",
+      "number": "11",
+      "rating": 3,
+      "decimal": 11.11,
+      "addressLine1": "Block 10",
+      "addressLine2": "CENTRAL EXCHANGE GREEN",
+      "addressLine3": "PIXEL",
+      "addressLine4": "138649",
+      "addressLine5": "SINGAPORE",
+      "appointments": {
+        "name": "Ken Lee",
+        "idType": "NRIC",
+        "address": {
+          "unit": "01",
+          "floor": "06",
+          "blockNo": "11",
+          "postalCode": "189675",
+          "streetName": "beach road",
+          "buildingName": ""
+        },
+        "category": "Individual",
+        "idNumber": "S6725327B",
+        "position": "Director",
+        "nationality": "SINGAPORE CITIZEN"
+      },
+      "standardAddress": {
+        "unit": "11",
+        "floor": "11",
+        "blockNo": "10",
+        "postalCode": "138649",
+        "streetName": "CENTRAL EXCHANGE GREEN",
+        "buildingName": "PIXEL"
+      }
+    }
+  ],
+  "remarks": {
+    "remarks": "test"
+  }
+}

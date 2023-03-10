@@ -1,0 +1,27 @@
+INSERT INTO users 
+        (name, email, status, is_deleted, agency_id, created_by, created_at, updated_by, updated_at)
+    VALUES
+        ('Admin', 'admin@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Admin 2', 'admin2@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Helpdesk (L2)', 'helpdesk@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Helpdesk (L2) 2', 'helpdesk2@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Supervisor', 'supervisor@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Supervisor 2', 'supervisor2@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Officer', 'officer@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Officer 2', 'officer2@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Officer (Read Only)', 'officer_readonly@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW()),
+        ('Officer (Read Only) 2', 'officer_readonly2@tech.gov.sg', 'ACTIVE', false, (SELECT id FROM agency WHERE code = 'test_dev'), 'YXs+opSyKxUaQRgvxR2jng==', NOW(), 'YXs+opSyKxUaQRgvxR2jng==', NOW());
+
+INSERT INTO user_role
+        (users_id, role_id)
+    VALUES
+        ((SELECT id FROM users WHERE email = 'admin@tech.gov.sg'), (SELECT id FROM role WHERE code = 'system_admin')),
+        ((SELECT id FROM users WHERE email = 'admin2@tech.gov.sg'), (SELECT id FROM role WHERE code = 'system_admin')),
+        ((SELECT id FROM users WHERE email = 'helpdesk@tech.gov.sg'), (SELECT id FROM role WHERE code = 'helpdesk')),
+        ((SELECT id FROM users WHERE email = 'helpdesk2@tech.gov.sg'), (SELECT id FROM role WHERE code = 'helpdesk')),
+        ((SELECT id FROM users WHERE email = 'supervisor@tech.gov.sg'), (SELECT id FROM role WHERE code = 'agency_supervisor')),
+        ((SELECT id FROM users WHERE email = 'supervisor2@tech.gov.sg'), (SELECT id FROM role WHERE code = 'agency_supervisor')),
+        ((SELECT id FROM users WHERE email = 'officer@tech.gov.sg'), (SELECT id FROM role WHERE code = 'agency_officer')),
+        ((SELECT id FROM users WHERE email = 'officer2@tech.gov.sg'), (SELECT id FROM role WHERE code = 'agency_officer')),
+        ((SELECT id FROM users WHERE email = 'officer_readonly@tech.gov.sg'), (SELECT id FROM role WHERE code = 'agency_officer_ro')),
+        ((SELECT id FROM users WHERE email = 'officer_readonly2@tech.gov.sg'), (SELECT id FROM role WHERE code = 'agency_officer_ro'));

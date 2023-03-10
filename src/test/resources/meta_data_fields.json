@@ -1,0 +1,1484 @@
+{
+  "id": "ecd5dfba-3c1e-4921-b87e-150279146ae6",
+  "schema": {
+    "declaration": {
+      "id": "DECLARATION_SECTION",
+      "key": "declaration",
+      "fields": [
+        {
+          "id": "DECLARATION_FIELD",
+          "attr": {
+            "hasAdditional": false,
+            "acknowledgement": "I hereby declare that all of the above is true.",
+            "generalDeclaration": "I declare that all the information given in this application form is true and correct.\n\nI am aware that legal action may be taken against me if I had knowingly provided false information.\n\nI agree that in any legal proceedings, I shall not dispute the authenticity or accuracy of any statements, confirmations, records, acknowledgements, information recorded in or produced in this application."
+          },
+          "type": "declaration"
+        }
+      ],
+      "header": "Declaration"
+    },
+    "generalInfo": [
+      {
+        "id": "2wmzbc1h4",
+        "key": "additionalComponents",
+        "fields": [
+          {
+            "id": "fb9223hk8",
+            "key": "dropdown",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "rgse19rfq",
+            "key": "countryRegion",
+            "attr": {
+              "title": "Country/Region",
+              "options": [
+                {
+                  "label": "SINGAPORE"
+                },
+                {
+                  "label": "AFGHANISTAN"
+                },
+                {
+                  "label": "ZIMBABWE"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "country"
+          },
+          {
+            "id": "wbjcpcvnb",
+            "key": "nationality",
+            "attr": {
+              "title": "Nationality",
+              "options": [
+                {
+                  "label": "SINGAPORE CITIZEN"
+                },
+                {
+                  "label": "AFGHAN"
+                },
+                {
+                  "label": "ZIMBABWEAN"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "nationality"
+          },
+          {
+            "id": "n23a5488a",
+            "key": "id",
+            "attr": {
+              "title": "ID Type & ID Number",
+              "required": true,
+              "nonEditable": false
+            },
+            "type": "id_type"
+          }
+        ],
+        "header": "Additional Components"
+      },
+      {
+        "id": "xxxxxxxx4",
+        "key": "addableWithComponents",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "rowId",
+            "attr": {
+              "title": "No."
+            },
+            "type": "rowId"
+          },
+          {
+            "id": "xxx02",
+            "key": "rowStatus",
+            "attr": {
+              "title": "Status"
+            },
+            "type": "rowStatus"
+          },
+          {
+            "id": "xxx03",
+            "key": "longText",
+            "attr": {
+              "title": "Long Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx04",
+            "key": "shortText",
+            "attr": {
+              "title": "Short Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 100
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx05",
+            "key": "radioButton",
+            "attr": {
+              "title": "Radio Button",
+              "options": [
+                {
+                  "label": "Option 1"
+                },
+                {
+                  "label": "Option 2"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "radiobutton"
+          },
+          {
+            "id": "xxx06",
+            "key": "date",
+            "attr": {
+              "title": "Date",
+              "required": true
+            },
+            "type": "date"
+          },
+          {
+            "id": "xxx07",
+            "key": "checkbox",
+            "attr": {
+              "title": "Checkbox",
+              "options": [
+                {
+                  "label": "Option 1"
+                },
+                {
+                  "label": "Option 2"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "checkbox"
+          },
+          {
+            "id": "xxx078",
+            "key": "address",
+            "attr": {
+              "title": "Address",
+              "required": false
+            },
+            "type": "address"
+          },
+          {
+            "id": "xxx09",
+            "key": "statement",
+            "attr": {
+              "description": "<p>Some nice description</p>"
+            },
+            "type": "statement"
+          },
+          {
+            "id": "xxx10",
+            "key": "contactNumber",
+            "attr": {
+              "title": "Contact Number",
+              "required": true
+            },
+            "type": "contactnumber"
+          },
+          {
+            "id": "xxx11",
+            "key": "email",
+            "attr": {
+              "title": "Email",
+              "required": true
+            },
+            "type": "email"
+          },
+          {
+            "id": "xxx12",
+            "key": "attachment",
+            "attr": {
+              "title": "Addable Attachment",
+              "required": true,
+              "description": "Addable Attachment description"
+            },
+            "type": "attachment"
+          },
+          {
+            "id": "xxx13",
+            "key": "dropdown",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx13",
+            "key": "paymentMode",
+            "attr": {
+              "title": "Payment Mode",
+              "options": [
+                {
+                  "label": "Online Payment",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Offline Payment",
+                  "metaTag": ""
+                }
+              ],
+              "required": true
+            },
+            "type": "payment_mode"
+          },
+          {
+            "id": "xxx14",
+            "key": "countryRegion",
+            "attr": {
+              "title": "Country/Region",
+              "options": [
+                {
+                  "label": "SINGAPORE"
+                },
+                {
+                  "label": "MALAYSIA"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "country"
+          },
+          {
+            "id": "XXX15",
+            "key": "nationality",
+            "attr": {
+              "title": "Nationality",
+              "options": [
+                {
+                  "label": "SINGAPORE CITIZEN"
+                },
+                {
+                  "label": "MALAYSIAN"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "nationality"
+          },
+          {
+            "id": "xxx15",
+            "key": "id",
+            "attr": {
+              "title": "ID type & ID Number",
+              "required": true,
+              "nonEditable": false
+            },
+            "type": "id_type"
+          },
+          {
+            "id": "xxx16",
+            "key": "subAddable",
+            "attr": {
+              "title": "Sub-Addable",
+              "required": true,
+              "subAddableSections": {
+                "id": "xxx111",
+                "key": "subaddable1",
+                "label": "subaddable"
+              }
+            },
+            "type": "subaddable"
+          }
+        ],
+        "header": "Addable With More Components",
+        "maximumDuplication": 3
+      },
+      {
+        "id": "xxx111",
+        "key": "subaddable1",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "dropdown",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx03",
+            "key": "longText",
+            "attr": {
+              "title": "Long Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textfield"
+          }
+        ],
+        "header": "subaddable with long header which is more than 288px "
+      },
+      {
+        "id": "xxxxxxxx3",
+        "key": "addableWithSubaddables",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "rowId",
+            "attr": {
+              "title": "No."
+            },
+            "type": "rowId"
+          },
+          {
+            "id": "xxx02",
+            "key": "subAddable2",
+            "attr": {
+              "title": "Sub-Addable",
+              "required": true,
+              "subAddableSections": {
+                "id": "xxx112",
+                "key": "subaddable2",
+                "label": "subaddable"
+              }
+            },
+            "type": "subaddable"
+          },
+          {
+            "id": "xxx03",
+            "key": "shortText",
+            "attr": {
+              "title": "Short Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 100
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx04",
+            "key": "subAddable3",
+            "attr": {
+              "title": "Sub-Addable",
+              "required": true,
+              "subAddableSections": {
+                "id": "xxx113",
+                "key": "subaddable3",
+                "label": "Another subaddable"
+              }
+            },
+            "type": "subaddable"
+          }
+        ],
+        "header": "Addable With Subaddables",
+        "maximumDuplication": 3
+      },
+      {
+        "id": "xxx112",
+        "key": "subaddable2",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "dropdown1",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx02",
+            "key": "longText",
+            "attr": {
+              "title": "Long Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx03",
+            "key": "dropdown2",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          }
+        ],
+        "header": "Subaddable with a very long header that will go to next line since contents are less than 288px"
+      },
+      {
+        "id": "xxx113",
+        "key": "subaddable3",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "dropdown1",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx03",
+            "key": "id",
+            "attr": {
+              "title": "ID Type & ID Number",
+              "required": true,
+              "nonEditable": false
+            },
+            "type": "id_type"
+          }
+        ],
+        "header": "Another subaddable"
+      }
+    ],
+    "applicationDetail": [
+      {
+        "id": "2wmzbc1h4",
+        "key": "additionalComponents",
+        "fields": [
+          {
+            "id": "fb9223hk8",
+            "key": "dropdown",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "rgse19rfq",
+            "key": "countryRegion",
+            "attr": {
+              "title": "Country/Region",
+              "options": [
+                {
+                  "label": "SINGAPORE"
+                },
+                {
+                  "label": "AFGHANISTAN"
+                },
+                {
+                  "label": "ZIMBABWE"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "country"
+          },
+          {
+            "id": "wbjcpcvnb",
+            "key": "nationality",
+            "attr": {
+              "title": "Nationality",
+              "options": [
+                {
+                  "label": "SINGAPORE CITIZEN"
+                },
+                {
+                  "label": "AFGHAN"
+                },
+                {
+                  "label": "ZIMBABWEAN"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "nationality"
+          },
+          {
+            "id": "n23a5488a",
+            "key": "id",
+            "attr": {
+              "title": "ID Type & ID Number",
+              "required": true,
+              "nonEditable": false
+            },
+            "type": "id_type"
+          }
+        ],
+        "header": "Additional Components"
+      },
+      {
+        "id": "xxxxxxxx4",
+        "key": "addableWithComponents",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "rowId",
+            "attr": {
+              "title": "No."
+            },
+            "type": "rowId"
+          },
+          {
+            "id": "xxx02",
+            "key": "rowStatus",
+            "attr": {
+              "title": "Status"
+            },
+            "type": "rowStatus"
+          },
+          {
+            "id": "xxx03",
+            "key": "longText",
+            "attr": {
+              "title": "Long Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx04",
+            "key": "shortText",
+            "attr": {
+              "title": "Short Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 100
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx05",
+            "key": "radioButton",
+            "attr": {
+              "title": "Radio Button",
+              "options": [
+                {
+                  "label": "Option 1"
+                },
+                {
+                  "label": "Option 2"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "radiobutton"
+          },
+          {
+            "id": "xxx06",
+            "key": "date",
+            "attr": {
+              "title": "Date",
+              "required": true
+            },
+            "type": "date"
+          },
+          {
+            "id": "xxx07",
+            "key": "checkbox",
+            "attr": {
+              "title": "Checkbox",
+              "options": [
+                {
+                  "label": "Option 1"
+                },
+                {
+                  "label": "Option 2"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "checkbox"
+          },
+          {
+            "id": "xxx078",
+            "key": "address",
+            "attr": {
+              "title": "Address",
+              "required": false
+            },
+            "type": "address"
+          },
+          {
+            "id": "xxx09",
+            "key": "statement",
+            "attr": {
+              "description": "<p>Some nice description</p>"
+            },
+            "type": "statement"
+          },
+          {
+            "id": "xxx10",
+            "key": "contactNumber",
+            "attr": {
+              "title": "Contact Number",
+              "required": true
+            },
+            "type": "contactnumber"
+          },
+          {
+            "id": "xxx11",
+            "key": "email",
+            "attr": {
+              "title": "Email",
+              "required": true
+            },
+            "type": "email"
+          },
+          {
+            "id": "xxx12",
+            "key": "attachment",
+            "attr": {
+              "title": "Addable Attachment",
+              "required": true,
+              "description": "Addable Attachment description"
+            },
+            "type": "attachment"
+          },
+          {
+            "id": "xxx13",
+            "key": "dropdown",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx13",
+            "key": "paymentMode",
+            "attr": {
+              "title": "Payment Mode",
+              "options": [
+                {
+                  "label": "Online Payment",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Offline Payment",
+                  "metaTag": ""
+                }
+              ],
+              "required": true
+            },
+            "type": "payment_mode"
+          },
+          {
+            "id": "xxx14",
+            "key": "countryRegion",
+            "attr": {
+              "title": "Country/Region",
+              "options": [
+                {
+                  "label": "SINGAPORE"
+                },
+                {
+                  "label": "MALAYSIA"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "country"
+          },
+          {
+            "id": "XXX15",
+            "key": "nationality",
+            "attr": {
+              "title": "Nationality",
+              "options": [
+                {
+                  "label": "SINGAPORE CITIZEN"
+                },
+                {
+                  "label": "MALAYSIAN"
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "nationality"
+          },
+          {
+            "id": "xxx15",
+            "key": "id",
+            "attr": {
+              "title": "ID type & ID Number",
+              "required": true,
+              "nonEditable": false
+            },
+            "type": "id_type"
+          },
+          {
+            "id": "xxx16",
+            "key": "subAddable",
+            "attr": {
+              "title": "Sub-Addable",
+              "required": true,
+              "subAddableSections": {
+                "id": "xxx111",
+                "key": "subaddable1",
+                "label": "subaddable"
+              }
+            },
+            "type": "subaddable"
+          }
+        ],
+        "header": "Addable With More Components",
+        "maximumDuplication": 3
+      },
+      {
+        "id": "xxx111",
+        "key": "subaddable1",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "dropdown",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx03",
+            "key": "longText",
+            "attr": {
+              "title": "Long Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textfield"
+          }
+        ],
+        "header": "subaddable with long header which is more than 288px "
+      },
+      {
+        "id": "xxxxxxxx3",
+        "key": "addableWithSubaddables",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "rowId",
+            "attr": {
+              "title": "No."
+            },
+            "type": "rowId"
+          },
+          {
+            "id": "xxx02",
+            "key": "subAddable2",
+            "attr": {
+              "title": "Sub-Addable",
+              "required": true,
+              "subAddableSections": {
+                "id": "xxx112",
+                "key": "subaddable2",
+                "label": "subaddable"
+              }
+            },
+            "type": "subaddable"
+          },
+          {
+            "id": "xxx03",
+            "key": "shortText",
+            "attr": {
+              "title": "Short Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 100
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx04",
+            "key": "subAddable3",
+            "attr": {
+              "title": "Sub-Addable",
+              "required": true,
+              "subAddableSections": {
+                "id": "xxx113",
+                "key": "subaddable3",
+                "label": "Another subaddable"
+              }
+            },
+            "type": "subaddable"
+          }
+        ],
+        "header": "Addable With Subaddables",
+        "maximumDuplication": 3
+      },
+      {
+        "id": "xxx112",
+        "key": "subaddable2",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "dropdown1",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx02",
+            "key": "longText",
+            "attr": {
+              "title": "Long Text",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "xxx03",
+            "key": "dropdown2",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          }
+        ],
+        "header": "Subaddable with a very long header that will go to next line since contents are less than 288px"
+      },
+      {
+        "id": "xxx113",
+        "key": "subaddable3",
+        "fields": [
+          {
+            "id": "xxx01",
+            "key": "dropdown1",
+            "attr": {
+              "title": "Dropdown",
+              "options": [
+                {
+                  "label": "Option 1",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 2",
+                  "metaTag": ""
+                },
+                {
+                  "label": "Option 3",
+                  "metaTag": ""
+                }
+              ],
+              "required": true,
+              "hasOthers": false
+            },
+            "type": "dropdown"
+          },
+          {
+            "id": "xxx03",
+            "key": "id",
+            "attr": {
+              "title": "ID Type & ID Number",
+              "required": true,
+              "nonEditable": false
+            },
+            "type": "id_type"
+          }
+        ],
+        "header": "Another subaddable"
+      },
+      {
+        "id": "nxaul6mtv",
+        "key": "section",
+        "fields": [
+          {
+            "id": "pf5c662d2",
+            "key": "nric",
+            "attr": {
+              "title": "NRIC",
+              "required": true
+            },
+            "type": "nric"
+          },
+          {
+            "id": "wt0c81cux",
+            "key": "shareholders",
+            "attr": {
+              "title": "Shareholders",
+              "required": true,
+              "shareholderInfo": {
+                "name": false,
+                "idType": false,
+                "address": {
+                  "unit": false,
+                  "floor": false,
+                  "blockNo": false,
+                  "postalCode": false,
+                  "streetName": false,
+                  "buildingName": false
+                },
+                "category": false,
+                "currency": false,
+                "idNumber": false,
+                "shareType": false,
+                "allocation": false,
+                "shareGroup": false,
+                "nationality": false,
+                "allotmentDate": false,
+                "guaranteedAmount": false
+              }
+            },
+            "type": "edh_shareholderlist"
+          },
+          {
+            "id": "8kfo7i18q",
+            "key": "appointments",
+            "attr": {
+              "title": "Appointments",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "appointedPersonInfo": {
+                "name": false,
+                "idType": false,
+                "address": {
+                  "unit": false,
+                  "floor": false,
+                  "blockNo": false,
+                  "postalCode": false,
+                  "streetName": false,
+                  "buildingName": false
+                },
+                "category": false,
+                "idNumber": false,
+                "position": false,
+                "nationality": false,
+                "appointedDate": false
+              }
+            },
+            "type": "edh_appointments"
+          }
+        ],
+        "header": "Section"
+      },
+      {
+        "id": "xxxxxxxx1",
+        "key": "complexAddable",
+        "fields": [
+          {
+            "id": "wt0c81cux",
+            "key": "shareholders",
+            "attr": {
+              "title": "Shareholders",
+              "required": true,
+              "shareholderInfo": {
+                "name": false,
+                "idType": false,
+                "address": {
+                  "unit": false,
+                  "floor": false,
+                  "blockNo": false,
+                  "postalCode": false,
+                  "streetName": false,
+                  "buildingName": false
+                },
+                "category": false,
+                "currency": false,
+                "idNumber": false,
+                "shareType": false,
+                "allocation": false,
+                "shareGroup": false,
+                "nationality": false,
+                "allotmentDate": false,
+                "guaranteedAmount": false
+              }
+            },
+            "type": "edh_shareholderlist"
+          },
+          {
+            "id": "xxx03",
+            "key": "addableField2",
+            "attr": {
+              "title": "Addable Field 2",
+              "required": true,
+              "customValidation": {
+                "type": "Maximum",
+                "value": 250
+              }
+            },
+            "type": "textarea"
+          }
+        ],
+        "header": "Addable with Shareholders",
+        "maximumDuplication": 3
+      },
+      {
+        "id": "xxxxxxxx2",
+        "key": "addableWithAppointments",
+        "fields": [
+          {
+            "id": "8kfo7i22q",
+            "key": "appointments",
+            "attr": {
+              "title": "Appointments",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "appointedPersonInfo": {
+                "name": false,
+                "idType": false,
+                "address": {
+                  "unit": false,
+                  "floor": false,
+                  "blockNo": false,
+                  "postalCode": false,
+                  "streetName": false,
+                  "buildingName": false
+                },
+                "category": false,
+                "idNumber": false,
+                "position": false,
+                "nationality": false,
+                "appointedDate": false
+              }
+            },
+            "type": "edh_appointments"
+          },
+          {
+            "id": "8wagaqqow",
+            "key": "number",
+            "attr": {
+              "title": "Number",
+              "required": true
+            },
+            "type": "number"
+          },
+          {
+            "id": "2jg508bje",
+            "key": "yesNo",
+            "attr": {
+              "title": "Yes/No",
+              "required": true,
+              "metaTagNo": "",
+              "metaTagYes": ""
+            },
+            "type": "yes_no"
+          },
+          {
+            "id": "zc0dcanjq",
+            "key": "time",
+            "attr": {
+              "title": "Time",
+              "required": true
+            },
+            "type": "time"
+          },
+          {
+            "id": "pf5c662d2",
+            "key": "nric",
+            "attr": {
+              "title": "NRIC",
+              "required": true
+            },
+            "type": "nric"
+          },
+          {
+            "id": "q9t9b9nhz",
+            "key": "decimal",
+            "attr": {
+              "title": "Decimal",
+              "required": true
+            },
+            "type": "decimal"
+          },
+          {
+            "id": "digr5zg1t",
+            "key": "rating",
+            "attr": {
+              "steps": 5,
+              "title": "Rating",
+              "shapes": "Heart",
+              "required": true
+            },
+            "type": "rating"
+          },
+          {
+            "id": "0fm0u7z51",
+            "key": "standardAddress",
+            "attr": {
+              "title": "Standard Address",
+              "required": false,
+              "description": "",
+              "nonEditable": false,
+              "displayLandownership": false,
+              "withoutPostalCodeEnabled": false,
+              "withPostalCodeRequiredConfig": {
+                "unit": true,
+                "floor": true,
+                "buildingName": true
+              }
+            },
+            "type": "address"
+          },
+          {
+            "id": "rc5a8qscq",
+            "key": "headerText",
+            "attr": {
+              "description": "<p>Non Standard Address</p>"
+            },
+            "type": "header_text"
+          },
+          {
+            "id": "vpymq1k5m",
+            "key": "addressLine1",
+            "attr": {
+              "title": "Address Line 1",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "nonEditable": null,
+              "questionTag": null,
+              "customValidation": null
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "593nwg4ss",
+            "key": "addressLine2",
+            "attr": {
+              "title": "Address Line 2",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "nonEditable": null,
+              "questionTag": null,
+              "customValidation": null
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "nyc8gtmi7",
+            "key": "addressLine3",
+            "attr": {
+              "title": "Address Line 3",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "nonEditable": null,
+              "questionTag": null,
+              "customValidation": null
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "w031efhna",
+            "key": "addressLine4",
+            "attr": {
+              "title": "Address Line 4",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "nonEditable": null,
+              "questionTag": null,
+              "customValidation": null
+            },
+            "type": "textfield"
+          },
+          {
+            "id": "dhmujbpwx",
+            "key": "addressLine5",
+            "attr": {
+              "title": "Address Line 5",
+              "tooltip": null,
+              "required": true,
+              "description": null,
+              "nonEditable": null,
+              "questionTag": null,
+              "customValidation": null
+            },
+            "type": "textfield"
+          }
+        ],
+        "header": "Addable with Appointments",
+        "maximumDuplication": 3
+      }
+    ],
+    "generalInfoLogics": {
+      "showIfLogics": [
+        {
+          "id": "SHOW_FILTER_DETAILS_LOGIC",
+          "conditions": [
+            {
+              "state": "is equal to",
+              "value": "On behalf of applicant",
+              "fieldId": "GI_PROFILE_APPLY_AS",
+              "fieldType": "radiobutton"
+            }
+          ],
+          "actionTargetIds": [
+            "GI_FILER_DETAIL_SALUTATION",
+            "GI_FILER_DETAIL_NAME",
+            "GI_FILER_DETAIL_ID_TYPE_ID_NUMBER",
+            "GI_FILER_DETAIL_EMAIL",
+            "GI_FILER_DETAIL_CONTACT_NUMBER",
+            "GI_FILER_DETAIL_RECEIVE_STATUS_UPDATES_VIA_SMS"
+          ]
+        },
+        {
+          "id": "SHOW_FILTER_DETAILS_LOGIC",
+          "conditions": [
+            {
+              "state": "is equal to",
+              "value": "For Individuals",
+              "fieldId": "GI_LOGINTYPE_AS",
+              "fieldType": "radiobutton"
+            }
+          ],
+          "actionTargetIds": [
+            "GI_APPLICANT_DETAIL_ADDRESS"
+          ]
+        },
+        {
+          "id": "SHOW_FILTER_DETAILS_LOGIC",
+          "conditions": [
+            {
+              "state": "is equal to",
+              "value": "For Companies",
+              "fieldId": "GI_LOGINTYPE_AS",
+              "fieldType": "radiobutton"
+            }
+          ],
+          "actionTargetIds": [
+            "GI_COMPANY_DETAIL_COMPANY_NAME",
+            "GI_COMPANY_DETAIL_UEN",
+            "GI_COMPANY_DETAIL_ENTITY_TYPE",
+            "GI_COMPANY_DETAIL_REGISTERED_ADDRESS"
+          ]
+        }
+      ],
+      "requireIfLogics": []
+    },
+    "applicationDetailLogics": {
+      "setIfLogics": [],
+      "showIfLogics": [],
+      "requireIfLogics": []
+    }
+  },
+  "status": "LIVE",
+  "formName": "MOLBLT-2006-createApplication",
+  "settings": {
+    "faq": null,
+    "payNow": "Fixed Price",
+    "timeTaken": "10 mins",
+    "description": "<p>MOLBLT-2006-createApplication</p>",
+    "paymentMethod": "Pay Now (pay at submission)",
+    "prerequisites": null,
+    "offlinePayment": null,
+    "licenceValidity": "N.A",
+    "processingTaken": "1 week",
+    "payNowFixedPrice": "60.00",
+    "payNowIncludesGST": false,
+    "authenticationType": [
+      "SingPass",
+      "CorpPass"
+    ],
+    "supportingDocument": null,
+    "allowThirdPartyCorpPass": true,
+    "allowThirdPartySingPass": true
+  },
+  "agencyCode": "spf",
+  "agencyName": "Singapore Police Force",
+  "licenceName": "In House Employer’s Registration New",
+  "operationTypeId": "d9ea79da-2668-f34f-b5fa-1d666822a708",
+  "agencyLicenceType": "In House Employer’s Registration",
+  "agencyOperationType": "New"
+}

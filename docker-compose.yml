@@ -1,0 +1,32 @@
+version: "3.7"
+services:
+  postgres:
+    extends:
+      file: docker/common.yml
+      service: postgres
+  backend:
+    build:
+      context: .
+      dockerfile: DockerfileFargate
+      args:
+        G2B_NEXUS_USERNAME: ${G2B_NEXUS_USERNAME:?err}
+        G2B_NEXUS_PASSWORD: ${G2B_NEXUS_PASSWORD:?err}
+        G2B_NEXUS_HOST: ${G2B_NEXUS_HOST:-nexus.ship.gov.sg}
+    volumes:
+      - ./config:/app/config
+    environment:
+      MOLB_SPRING_PROFILES_ACTIVE: ${MOLB_SPRING_PROFILES_ACTIVE:-local}
+      MOLB_DB_HOST: ${MOLB_DB_HOST:-postgres}
+      MOLB_DB_PORT: ${MOLB_DB_PORT:-5432}
+      MOLB_DB_ROLE: ${MOLB_DB_ROLE:-molbap}
+      MOLB_DB_USERNAME: ${MOLB_DB_USERNAME:-test}
+      MOLB_DB_PASSWORD: ${MOLB_DB_PASSWORD:-test}
+      MOLB_DB_NAME: ${MOLB_DB_NAME:-molbap}
+    ports:
+      - "8088:8088"
+    depends_on:
+      postgres:
+        condition: service_started
+    restart: always
+volumes:
+  ap_postgres_data: {}

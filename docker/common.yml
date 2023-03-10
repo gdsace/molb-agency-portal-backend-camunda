@@ -1,0 +1,24 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:13.7-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-molbap}
+      POSTGRES_USER: ${POSTGRES_USER:-test}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-test}
+    volumes:
+      - ap_postgres_data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT:-5438}:5432"
+  redis:
+    image: redis:6.2-alpine
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - ap_redis_data:/data
+    command: redis-server --requirepass redis
+volumes:
+  ap_postgres_data: {}
+  ap_redis_data: {}

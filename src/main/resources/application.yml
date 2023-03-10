@@ -1,0 +1,111 @@
+molb-service-name: molb-agency-portal-backend
+molb-product-name: Agency Portal
+server:
+  port: 8089
+  host: ${MOLB_HOST}
+spring:
+  profiles:
+    active: ${MOLB_SPRING_PROFILES_ACTIVE:local}
+  application:
+    name: molb-agency-portal-backend-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${MOLB_DB_HOST}:${MOLB_DB_PORT}/${MOLB_DB_NAME}
+    username: ${MOLB_DB_USERNAME}
+    password: ${MOLB_DB_PASSWORD}
+  flyway:
+    enabled: true
+    out-of-order: true
+    locations: classpath:db/migration
+  jpa:
+    open-in-view: false
+    properties:
+      org:
+        hibernate:
+          envers:
+            audit_table_suffix: _history
+            revision_field_name: revision_id
+            revision_type_field_name: revision_type
+      hibernate:
+        show-sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.PostgreSQL9Dialect
+        temp:
+          use_jdbc_metadata_defaults: false
+  main:
+    allow-bean-definition-overriding: true
+  servlet:
+    multipart:
+      max-file-size: 15MB
+      max-request-size: 15MB
+      enabled: true
+  security:
+    job:
+      username: ${MOLB_SPRING_SECURITY_JOB_USERNAME}
+      password: ${MOLB_SPRING_SECURITY_JOB_PASSWORD}
+
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: full
+
+integration:
+  l1t:
+    version: ${L1T_INTEGRATION_VERSION}
+    file-upload-host: ${L1T_FILE_UPLOAD_SERVICE_HOST}
+    api-host: ${L1T_API_HOST}
+    app-id: ${L1T_API_APP_ID}
+    private-key: ${L1T_API_AUTH_PRIVATE_KEY}
+  wogad:
+    client-id: ${WOGAD_CLIENT_ID}
+    tenant-id: ${WOGAD_TENANT_ID}
+    scope: ${WOGAD_SCOPE}
+    redirect-uri: ${WOGAD_REDIRECT_URI}
+    grant-type: ${WOGAD_GRANT_TYPE}
+    client-secret: ${WOGAD_CLIENT_SECRET}
+    auth-host: ${WOGAD_AUTH_HOST}
+  dashboard-document-service:
+    app-id: ${DDS_APP_ID}
+    private-key: ${DDS_AUTH_PRIVATE_KEY}
+    file-api-host: ${DDS_API_HOST}
+  gsib:
+    ip: ${GSIB_IP}
+masking:
+  privateKeyHexadecimal: ${MOLB_MASKING_PRIVATE_KEY_HEXADECIMAL}
+cors:
+  corsWhitelist: ${MOLB_CORS_CORS_WHITELIST}
+signature-verification:
+  domains:
+    - app-id: ${L1T_APP_ID}
+      public-key: ${L1T_AUTH_PUBLIC_KEY}
+aws:
+  accessKey: ${MOLB_AWS_ACCESS_KEY}
+  secretKey: ${MOLB_AWS_SECRET_KEY}
+  sqs:
+    start-app-workflow-url: ${MOLB_SQS_URL_START_APP_WORKFLOW}
+    l1t-update-status-url: ${MOLB_SQS_URL_L1T_UPDATE_STATUS}
+session:
+  ap-token-expiry: ${AP_TOKEN_EXPIRY}
+  ap-token-secret: ${AP_TOKEN_SECRET}
+redis:
+  primary: ${REDIS_PRIMARY}
+  replica: ${REDIS_REPLICA}
+  port: ${REDIS_PORT}
+  token: ${REDIS_TOKEN}
+
+features:
+  reassign: ${AP_FEATURES_REASSIGN}
+  rfa: ${AP_FEATURES_RFA}
+  withdrawal: ${AP_FEATURES_WITHDRAWAL}
+
+camunda.bpm:
+  admin-user:
+    id: ${MOLB_AP_CAMUNDA_USERNAME}
+    password: ${MOLB_AP_CAMUNDA_PASSWORD}
+  deployment-resource-pattern:
+    - classpath*:bpmn/*.bpmn
+    - classpath*:bpmn/*.bpmn20.xml
+    - classpath*:bpmn/*.dmn
+    - classpath*:bpmn/*.dmn11.xml
+    - classpath*:bpmn/*.forms

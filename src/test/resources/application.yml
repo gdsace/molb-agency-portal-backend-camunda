@@ -1,0 +1,25 @@
+---
+# Add this block to the logging key if you want to see more informative SQL logs - disabled by default due to slowness.
+#logging:
+#  level:
+#    org:
+#      hibernate:
+#        SQL: DEBUG
+#        type:
+#          descriptor:
+#            sql:
+#              BasicBinder: TRACE
+
+spring:
+  test:
+    database:
+      replace: none
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true

@@ -1,0 +1,9 @@
+build/
+.gradle/
+.idea/
+.git/
+docker/
+Dockerfile
+docker-compose*
+README.*
+.DS_Store

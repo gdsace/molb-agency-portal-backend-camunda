@@ -1,0 +1,2 @@
+ALTER TABLE licence
+    ADD COLUMN due_for_renewal BOOLEAN NOT NULL DEFAULT FALSE;

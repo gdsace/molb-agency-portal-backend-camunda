@@ -1,0 +1,10 @@
+<process-application xmlns="http://www.camunda.org/schema/1.0/ProcessApplication">
+
+  <process-archive>
+    <properties>
+      <property name="isDeployChangedOnly">true</property>
+      <property name="historyTimeToLive">P60D</property>
+    </properties>
+  </process-archive>
+
+</process-application>

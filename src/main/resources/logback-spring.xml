@@ -1,0 +1,63 @@
+<!--
+ This file is preferred if powered by spring-logging (org.springframework.boot.logging.AbstractLoggingSystem)
+ eg. spring-application, spring-integration-test
+ -->
+<configuration scan="true" debug="false">
+  <include resource="logback-console.xml"/>
+  <include resource="logback-elk.xml"/>
+
+  <appender name="ELK-Async" class="ch.qos.logback.classic.AsyncAppender">
+    <neverBlock>true</neverBlock>
+    <appender-ref ref="ELK"/>
+  </appender>
+
+  <springProfile name="test">
+    <logger level="DEBUG" name="sg.gov.tech.molbagencyportalbackend"/>
+    <logger level="DEBUG" name="sg.gov.tech.logging.RequestLoggingFilter"/>
+    <root level="INFO">
+      <appender-ref ref="STDOUT"/>
+    </root>
+  </springProfile>
+
+  <springProfile name="local">
+    <logger level="DEBUG" name="com.zaxxer.hikari.HikariConfig"/>
+    <logger level="DEBUG" name="com.zaxxer.hikari.pool.HikariPool"/>
+    <logger level="DEBUG" name="org.hibernate.SQL"/>
+    <logger level="TRACE" name="org.hibernate.type.descriptor.sql.BasicBinder"/>
+    <logger level="DEBUG" name="sg.gov.tech.molbagencyportalbackend"/>
+    <logger level="DEBUG" name="sg.gov.tech.logging.RequestLoggingFilter"/>
+    <logger level="DEBUG" name="org.springframework.ws.client"/>
+    <logger level="DEBUG" name="org.springframework.web.client"/>
+    <root level="INFO">
+      <appender-ref ref="STDOUT"/>
+    </root>
+  </springProfile>
+
+  <springProfile name="dev,qa,sandbox">
+    <logger level="DEBUG" name="com.zaxxer.hikari.HikariConfig"/>
+    <logger level="DEBUG" name="com.zaxxer.hikari.pool.HikariPool"/>
+    <logger level="DEBUG" name="org.hibernate.SQL"/>
+    <logger level="DEBUG" name="sg.gov.tech.molbagencyportalbackend"/>
+    <logger level="DEBUG" name="sg.gov.tech.logging.RequestLoggingFilter"/>
+    <logger level="TRACE" name="org.springframework.ws.client"/>
+    <logger level="TRACE" name="org.springframework.web.client"/>
+    <logger level="WARN" name="net.schmizz.sshj"/>
+    <root level="INFO">
+      <appender-ref ref="ELK-Async"/>
+    </root>
+  </springProfile>
+
+  <springProfile name="staging,production">
+    <logger level="ERROR" name="org.hibernate.SQL"/>
+    <logger level="DEBUG" name="com.zaxxer.hikari.HikariConfig"/>
+    <logger level="DEBUG" name="com.zaxxer.hikari.pool.HikariPool"/>
+    <logger level="DEBUG" name="sg.gov.tech.molbagencyportalbackend"/>
+    <logger level="DEBUG" name="sg.gov.tech.logging.RequestLoggingFilter"/>
+    <logger level="TRACE" name="org.springframework.ws.client"/>
+    <logger level="TRACE" name="org.springframework.web.client"/>
+    <logger level="WARN" name="net.schmizz.sshj"/>
+    <root level="INFO">
+      <appender-ref ref="ELK"/>
+    </root>
+  </springProfile>
+</configuration>
